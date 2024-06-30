@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Meta Tags for Character Set, HTTP, Viewport and Description -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Restaurant Website">
+
+    <!-- The Title of the Website -->
+    <title>The Crispy Corner - Menu</title>
+
+    <!-- Link to Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/Assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/Assets/favicon_io/site.webmanifest">
+    
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="/Assets/styles/style.css">
+
+    <!-- Link to Bootstrap and Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    
+</head>
+<body>
+
+    <!-- Header Section -->
+
+    <header>
+        <section class="row">
+            <div class="col-md-4">
+                <video id="my-video" autoplay muted width="35%">
+                    <source src="/Assets/videos/Fast Food Burgers Circle Logo.mp4" type="video/mp4">
+                </video>            
+            </div>
+
+            <div class="col-md-8"> 
+                <br><br>
+                <h1 style="font-family: Apple Chancery, cursive;">The Crispy Corner</h1>
+                <h3 style="font-family: Apple Chancery, cursive;">Savour the Crunch</h3>
+            </div>
+        </section>
+    </header>
+
+    <!-- Navigation Bar -->
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html" class="nav-link-active">Menu</a>
+        <a href="about.html">About Us</a>
+    </nav>
+
+    <!-- Welcome to Menu Section -->
+
+    <div class="cover">
+        <h1><b>Welcome to Our Menu</b></h1>
+        <p><b>Proceed To Further Menus</b></p>
+        <br><br>
+        <a href="#menu-main">        
+            <div class="chevron"></div>
+            <div class="chevron"></div>
+            <div class="chevron"></div>
+        </a>
+    </div>
+    <hr>
+
+    <!-- Menu Navigation Bar -->
+
+    <div class="sticky-div">
+        <ul class="menu-nav">
+            <li><a href="#" class="section-link" data-target="burgers">Burgers</a></li>
+            <li><a href="#" class="section-link" data-target="drinks">Drinks</a></li>
+            <li><a href="#" class="section-link" data-target="salads">Salads</a></li>
+            <li><a href="#" class="section-link" data-target="shakes">Shakes</a></li>
+        </ul>  
+    </div>
+    <br>
+
+
+    <div class="container" id="menu-main">
+
+        <!-- Burgers Section -->
+
+        <section id="burgers" style="border: 1px solid black; border-radius: 30px;">
+            <br>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="Assets/images/shallot.jpg" alt="Shallot Burger" width="35%">
+                    <br>
+                    <img src="Assets/images/kimchi.jpg" alt="Bacon-and-Kimchi Burger" width="35%">
+                    <br>
+                    <img src="Assets/images/tarragon.jpg" alt="Tarragon Burger" width="35%">
+                    <br>
+                    <img src="Assets/images/Gingersesameporkburger.jpg" alt="Ginger-Sesame Pork Burger" width="35%">
+                    <br>
+                    <img src="Assets/images/Cheddarandonionsmashedburger.jpg" alt="Cheddar-and-Onion Smashed Burger" width="35%">
+                    <br>
+                    <img src="Assets/images/Nachoburger.jpg" alt="Nacho Burger" width="35%">
+                </div>
+
+                <div class="col-md-8">
+                    <h3>Shallot Burger</h3>
+                    <p>cheese-stuffed "Juicy Lucy" burgers with a custom blend of ground rib eye steak and pork fatback.</p>
+                    <span class="price">900Ksh</span>
+                    <br><br><br>
+                    <hr>
+                    <br><br>
+
+                    <h3>Bacon-and-Kimchi Burger</h3>
+                    <p>Shake Shack–inspired burger with two thin stacked patties, thick-cut bacon, kimchi, and a spicy homemade sauce.</p>
+                    <span class="price">1000Ksh</span>
+                    <br><br>
+                    <hr>
+                    <br>
+                    
+                    <h3>Tarragon Burger</h3>
+                    <p>The natural sugars caramelize, making the meat on these BLT burgers extra-delicious.</p>
+                    <span class="price">850Ksh</span>
+                    <br><br><br>
+                    <hr>
+                    <br><br>
+
+                    <h3>Ginger-Sesame Pork Burger</h3>
+                    <p>Scallions, fresh ginger, garlic, and sesame oil to ground pork to make juicy burgers.</p>
+                    <span class="price">950Ksh</span>
+                    <br>
+                    <hr>
+                    <br>
+
+                    <h3>Cheddar-and-Onion Smashed Burger</h3>
+                    <p>Burger purists handle ground meat as little as possible; over-working the beef can create a tight, meatloaf texture.</p>
+                    <span class="price">700Ksh</span>
+                    <br><br><br>
+                    <hr>
+                    <br><br>
+                    <h3>Nacho Burger</h3>
+                    <p>Topped with gooey cheese, salsa, and tortilla chips. Pair them with a bold, berry-rich Zinfandel.</p>
+                    <span class="price">750Ksh</span>
+                </div>
+            </div>
+            <br><br>
+        </section>
+
+        <!-- Drinks Section -->
+
+        <section id="drinks" style="border: 1px solid black; border-radius: 30px; display: none;">
+
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="Assets/images/s.jpg" alt="Shallot Burger" width="35%">
+                    <br><br>
+                    <img src="Assets/images/t.jpg" alt="Bacon-and-Kimchi Burger" width="35%">
+                    <br>
+                    <img src="Assets/images/j.jpg" alt="Tarragon Burger" width="35%">
+                    <br>
+                    <img src="Assets/images/c.jpg" alt="Ginger-Sesame Pork Burger" width="35%">
+                    <br>
+                    <img src="Assets/images/m.jpg" alt="Cheddar-and-Onion Smashed Burger" width="35%">
+                </div>
+
+                <div class="col-md-8">
+                    <h3>Sodas</h3>
+                    <p>Cold and refreshing</p>
+                    <span class="price">100Ksh</span>
+                    <hr>
+
+                    <h3>Tea</h3>
+                    <p>Hot and Relaxing(Chamomile,Green,Tangawizi,Dawa) </p>
+                    <span class="price">80Ksh</span>
+                    <hr>
+                    
+                    <h3>Juices</h3>
+                    <p>Freshly squeezed(Orange,Passion,Mango,Tropical,Pomegranate) </p>
+                    <span class="price">100Ksh</span>
+                    <hr>
+
+                    <h3>Cocktails</h3>
+                    <p>Alcoholic(Margarita,Cosmopolitan,Daiquiri,Gimlet,Negroni) </p>
+                    <span class="price">250Ksh</span>
+                    <hr>
+
+                    <h3>Mocktails</h3>
+                    <p>Non-alcoholic(Spicy Watermelon Mint Agua Fresca,Virgin Cucumber Gimlet,Dry Cranberry Spitzer) </p>
+                    <span class="price">150Ksh</span>
+
+                </div>
+            </div>
+            <br><br>
+        </section>
+
+        <!-- Salads Section -->
+
+        <section id="salads" style="border: 1px solid black; border-radius: 30px; display: none;">
+
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="Assets/images/honey.jpg" alt="Shallot Burger" width="35%">
+                    <br><br>
+                    <img src="Assets/images/kale.jpg" alt="Bacon-and-Kimchi Burger" width="35%">
+                    <br>
+                    <img src="Assets/images/caesar.jpg" alt="Tarragon Burger" width="35%">
+                    <br>
+                    <br>
+                    <img src="Assets/images/arugu.jpg" alt="Ginger-Sesame Pork Burger" width="35%">
+                    <br>
+                    <img src="Assets/images/italian.jpg" alt="Cheddar-and-Onion Smashed Burger" width="35%">
+                    <br>
+                    <img src="Assets/images/straw.jpg" alt="Ginger-Sesame Pork Burger" width="35%">
+                </div>
+
+                <div class="col-md-8">
+                    <h3>Crisp Apple salad</h3>
+                    <p>Crisp tart apple slices pair with pops of pomegranate seeds, creamy goat cheese, and crunchy, cinnamon-spiced pecans.</p>
+                    <span class="price">200Ksh</span>
+                    <hr>
+
+                    <h3>Kale Salad</h3>
+                    <p>Italian-style dressing of lemon, Parmesan cheese, and garlic, the bitter taste of the kale is mellowed and melds beautifully with the other flavors.</p>
+                    <span class="price">300Ksh</span>
+                    <hr>
+                    
+                    <h3>Ceaser Salad</h3>
+                    <p>The savory, creamy dressing will instantly become a household favorite and the crunchy garlicky croutons</p>
+                    <span class="price">250Ksh</span>
+                    <hr>
+
+                    <h3>Arugula Salad</h3>
+                    <p>Dress arugula simply with olive oil and lemon juice, then add Parmesan shavings and thinly sliced shallots.</p>
+                    <span class="price">350Ksh</span>
+                    <hr>
+
+                    <h3>Italian Salad</h3>
+                    <p>Crisp lettuce, crunchy garlic croutons, and zingy pepperoncini</p>
+                    <span class="price">200Ksh</span>
+                    <br><br><br>
+                    <hr>
+                    <br>
+
+                    <h3>Strawberry Salad</h3>
+                    <p>Crunchy red onions, toasted almonds, feta cheese crumbles, and those delicious sweet berries</p>
+                    <span class="price">250Ksh</span>
+
+                </div>
+            </div>
+            <br><br>
+        </section>
+
+        <!-- Shakes Section -->
+
+        <section id="shakes" style="border: 1px solid black; border-radius: 30px; display: none;">
+
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="Assets/images/red.jpg" alt="Shallot Burger" width="35%">
+                    <br><br>
+                    <img src="Assets/images/vanilla.jpg" alt="Bacon-and-Kimchi Burger" width="35%">
+                    <br>
+                    <img src="Assets/images/choco.jpg" alt="Tarragon Burger" width="35%">
+                    <br>
+                    <img src="Assets/images/nut.jpg" alt="Ginger-Sesame Pork Burger" width="35%">
+                    <br>
+                    <img src="Assets/images/baw.jpg" alt="Cheddar-and-Onion Smashed Burger" width="35%">
+                    <br>
+                    <img src="Assets/images/berry.jpg" alt="Ginger-Sesame Pork Burger" width="35%">
+                </div>
+
+                <div class="col-md-8">
+                    <h3>Chocolate Chip Red Velvet Shake</h3>
+                    <p>Vanilla custard blended with red velvet cake and chocolate chips, topped with whipped cream and chocolate chips</p>
+                    <span class="price">550Ksh</span>
+                    <br><br>
+                    <hr>
+                    <br><br>
+
+                    <h3>Vanilla Shake</h3>
+                    <p>Vanilla Custard Shake</p>
+                    <span class="price">500Ksh</span>
+                    <br><br><br>
+                    <hr>
+                    <br><br>
+                    
+                    <h3>Chocolate Shake</h3>
+                    <p>Chocolate Custard Shake</p>
+                    <span class="price">500Ksh</span>
+                    <hr>
+
+                    <h3>Peanut Butter Shake</h3>
+                    <p>Vanilla Custard Shake with peanut butter sauce</p>
+                    <span class="price">500Ksh</span>
+                    <br><br><br>
+                    <hr>
+                    <br><br>
+
+                    <h3>Black & White Shake</h3>
+                    <p>Vanilla Custard with Hot Fudge</p>
+                    <span class="price">500Ksh</span>
+                    <hr>
+                
+
+                    <h3>Strawberry Shake</h3>
+                    <p>Vanilla custard Shake with strawberry puree</p>
+                    <span class="price">500Ksh</span>
+
+                </div>
+            </div>
+            <br><br>
+        </section>
+        <hr>
+        <br>
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+        <div id="footer">
+            <br>
+            <h3> &copy; The Crispy Corner</h3>
+        </div>
+    </footer>
+
+    <!-- Back to the Top Button -->
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <!-- Linking JavaScript -->
+
+    <script src="Assets/js/scripts.js"></script>
+    
+
+    
+</body>
+</html>
