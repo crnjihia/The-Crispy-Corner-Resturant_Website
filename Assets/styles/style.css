@@ -1,0 +1,328 @@
+/* Universal */
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+}
+
+body::before {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-image: url("/Assets/images/Burgerbackground.jpg");
+    opacity: 0.5;
+}
+
+header{
+    background-color: #a60b0b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: block;
+}
+
+#my-video {
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: fade-in 3s forwards;
+}
+
+@keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #dd620a;
+    color: white;
+    padding: 10px;
+}
+
+nav a{
+    color: white;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 20px;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.nav-link-active:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.nav-link-active{
+    background-color: rgb(21, 72, 43);
+    color: white;
+}
+
+footer{
+    text-align: center;
+    background-color: #dd620a;
+    height: 70px;
+}
+
+#footer{
+    font-family: cursive;
+    margin: auto;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 40px;
+}
+  
+#myBtn:hover {
+    background-color: #555;
+}
+
+/* Home Page */
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.how_works{
+    background-color: transparent;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font: 200;
+    color: #dd620a;
+}
+
+.image{ 
+    float: right;
+}
+
+/* Menu Page */
+
+.cover {
+    height: 65vh;
+    background-image: url('/Assets/images/bghomepage.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.cover h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.cover p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.chevron {
+    position: absolute;
+    width: 28px;
+    height: 8px;
+    opacity: 0;
+    transform: scale3d(0.5, 0.5, 0.5);
+    animation: move 3s ease-out infinite;
+}
+  
+.chevron:first-child {
+    animation: move 3s ease-out 1s infinite;
+}
+  
+.chevron:nth-child(2) {
+    animation: move 3s ease-out 2s infinite;
+}
+  
+.chevron:before,
+.chevron:after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 51%;
+    background: #fff;
+}
+  
+.chevron:before {
+    left: 0;
+    transform: skew(0deg, 30deg);
+}
+  
+.chevron:after {
+    right: 0;
+    width: 50%;
+    transform: skew(0deg, -30deg);
+}
+  
+@keyframes move {
+    25% {
+      opacity: 1;
+  
+    }
+    33% {
+      opacity: 1;
+      transform: translateY(30px);
+    }
+    67% {
+      opacity: 1;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+    }
+}
+
+@keyframes pulse {
+    to {
+      opacity: 1;
+    }
+}
+
+#content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+#content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#content ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#content li {
+    margin-bottom: 1rem;
+}
+
+#content p {
+    line-height: 1.5;
+}
+
+.menu-nav {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(21, 72, 43);
+    border-radius: 30px;
+    max-width: 700px;
+    text-align: center;
+}
+  
+.menu-nav li {
+    display: inline-block;
+}
+  
+.menu-nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+.menu-nav li a:hover {
+    background-color: #111;
+}
+  
+.sticky-div {
+    position: sticky;
+    top: 0px;
+}
+
+.menu-sections section {
+    display: none;
+}
+  
+.menu-sections .active {
+    display: block;
+}
+
+#burgers, #drinks, #salads, #shakes {
+    padding-top: 50px; 
+    margin-top: -50px; 
+}
+ 
+#burgers img {
+    display: flex;
+    margin: 0 auto;
+}
+
+#drinks img {
+    display: flex;
+    margin: 0 auto;
+}
+
+#salads img {
+    display: flex;
+    margin: 0 auto;
+}
+
+#shakes img {
+    display: flex;
+    margin: 0 auto;
+}
+
+/* About Us Page */
+
+#clear_btn{
+    background-color: red;
+    color: white;
+    border-radius: 20px;
+}
+
+#submit_btn{
+    background-color: green;
+    color: white;
+    border-radius: 20px;
+} 
+  
